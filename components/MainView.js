@@ -20,7 +20,7 @@ export const MainView = () => {
     dots: true,
     infinite: true,
     speed: 100,
-    arrows: true,
+    arrows: false,
     centerMode: true,
   };
 
