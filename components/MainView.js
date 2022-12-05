@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import image5 from "../images/aaa.jpg";
-import { client } from "../libs/client";
 
 export const MainView = () => {
   // const getView = async () => {
