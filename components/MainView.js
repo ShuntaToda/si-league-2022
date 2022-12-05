@@ -1,16 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import image5 from "../images/aaa.jpg";
 
-export const MainView = () => {
-  // const getView = async () => {
-  //   const data = await client.get({ endpoint: "blogs" });
-  // };
+import { client } from "../libs/client";
 
-  // useEffect(() => {
-  //   getView();
-  // }, []);
+export const MainView = () => {
+  const [imageContents, setImageContents] = useState([]);
+
+  const getView = async () => {
+    const data = await client.get({ endpoint: "main-view" });
+    setImageContents(data.contents);
+  };
+
+  useEffect(() => {
+    getView();
+  }, []);
   const settings = {
     dots: true,
     infinite: true,
@@ -19,12 +24,12 @@ export const MainView = () => {
     centerMode: true,
   };
 
-  const images = [image5, image5, image5];
   return (
     <Slider className="c-main-view" {...settings}>
-      {images.map((img, index) => (
+      {imageContents.map((content, index) => (
         <div key={index} className="px-1">
-          <Image src={img} alt="pictuer" />
+          {console.log(content.image.url)}
+          <Image src={content.image.url} width={1500} height={1000} alt="pictuer" />
         </div>
       ))}
     </Slider>
