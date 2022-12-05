@@ -2,8 +2,12 @@
   height: 100px;
   width: 100vw;
   &__logo {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
+    @media (min-width: 500px) {
+      height: 90px;
+      width: 90px;
+    }
     > img {
       height: 100%;
       width: 100%;
@@ -11,10 +15,32 @@
   }
 
   &__school {
-    height: 70px;
+    height: 60px;
+    @media (min-width: 500px) {
+      height: 70px;
+    }
     > img {
       height: 100%;
       width: 100%;
+    }
+  }
+
+  &__content {
+    font-size: 1.1rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    > span:nth-child(2) {
+      margin: 0;
+      @media (min-width: 500px) {
+        margin-left: 10px;
+      }
+    }
+    @media (min-width: 350px) {
+      font-size: 1.3rem;
+    }
+    @media (min-width: 500px) {
+      flex-direction: row;
     }
   }
 }
