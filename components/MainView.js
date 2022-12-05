@@ -25,10 +25,9 @@ export const MainView = () => {
   };
 
   return (
-    <Slider className="c-main-view" {...settings}>
+    <Slider className="c-main-view my-4" {...settings}>
       {imageContents.map((content, index) => (
         <div key={index} className="px-1">
-          {console.log(content.image.url)}
           <Image src={content.image.url} width={1500} height={1000} alt="pictuer" />
         </div>
       ))}

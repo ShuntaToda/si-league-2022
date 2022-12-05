@@ -4,25 +4,17 @@ import { client } from "../libs/client";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MainView } from "../components/MainView";
+import Blog from "../components/Blog";
 
 export default function Home({ blog }) {
+  console.log(blog);
   return (
     <Layout>
       <MainView></MainView>
-      <Link href={""} className={"btn btn-primary"}>
-        ボタン
-      </Link>
-      <Link href={""} className={"btn btn-secondary"}>
-        ボタン
-      </Link>
       <div>
-        <ul>
-          {blog.map((blog) => (
-            <li key={blog.id}>
-              <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
-            </li>
-          ))}
-        </ul>
+        {blog.map((blog) => (
+          <Blog blog={blog} key={blog.id}></Blog>
+        ))}
       </div>
     </Layout>
   );
@@ -30,7 +22,10 @@ export default function Home({ blog }) {
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blogs" });
+  const data = await client.get({
+    endpoint: "blogs",
+    queries: { filters: "category[equals]gmvnsg2l82j" },
+  });
   return {
     props: {
       blog: data.contents,
