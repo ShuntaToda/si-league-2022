@@ -6,7 +6,6 @@ import image5 from "../images/aaa.jpg";
 export const MainView = () => {
   // const getView = async () => {
   //   const data = await client.get({ endpoint: "blogs" });
-  //   console.log(data);
   // };
 
   // useEffect(() => {

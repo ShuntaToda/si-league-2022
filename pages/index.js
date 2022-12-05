@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { MainView } from "../components/MainView";
 
 export default function Home({ blog }) {
-  console.log(blog);
   return (
     <Layout>
       <MainView></MainView>
