@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import image5 from "../images/aaa.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { client } from "../libs/client";
 
@@ -19,15 +20,15 @@ export const MainView = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 100,
-    arrows: false,
-    centerMode: true,
+    autoplay: true,
+    arrows: true,
+    speed: 1000,
   };
 
   return (
     <Slider className="c-main-view my-4" {...settings}>
       {imageContents.map((content, index) => (
-        <div key={index} className="px-1">
+        <div key={index} className="">
           <Image src={content.image.url} width={1500} height={1000} alt="pictuer" />
         </div>
       ))}

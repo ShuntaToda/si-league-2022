@@ -27,20 +27,22 @@
 
   &__content {
     font-size: 1.1rem;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    > a > span:nth-child(2) {
-      margin: 0;
-      @media (min-width: 500px) {
-        margin-left: 10px;
+    > a {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      @media (min-width: 350px) {
+        font-size: 1.3rem;
       }
-    }
-    @media (min-width: 350px) {
-      font-size: 1.3rem;
-    }
-    @media (min-width: 500px) {
-      flex-direction: row;
+      @media (min-width: 500px) {
+        flex-direction: row;
+      }
+      > span:nth-child(2) {
+        margin: 0;
+        @media (min-width: 500px) {
+          margin-left: 10px;
+        }
+      }
     }
   }
 }

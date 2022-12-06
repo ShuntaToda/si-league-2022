@@ -1,17 +1,15 @@
 // pages/blog/[id].js
+import Blog from "../../components/Blog";
+import Layout from "../../components/layout/Layout";
+import MoreBlog from "../../components/MoreBlog";
 import { client } from "../../libs/client";
 
 export default function BlogId({ blog }) {
   return (
-    <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.content}`,
-        }}
-      />
-    </main>
+    <Layout>
+      <Blog blog={blog} key={blog.id}></Blog>
+      <MoreBlog></MoreBlog>
+    </Layout>
   );
 }
 

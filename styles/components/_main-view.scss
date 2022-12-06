@@ -1,6 +1,9 @@
 .c-main-view {
   height: 300px;
 
+  @media (min-width: 600px) {
+    height: 450px;
+  }
   @media (min-width: 900px) {
     height: 600px;
   }
