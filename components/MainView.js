@@ -21,6 +21,7 @@ export const MainView = () => {
     dots: true,
     infinite: true,
     autoplay: true,
+    arrows: false,
     speed: 1000,
   };
 
