@@ -11,7 +11,7 @@ export const Footer = () => {
           <span className="py-2">山﨑 晴翔</span>
           <span className="py-2">山﨑 晴翔</span>
           <span className="py-2">山﨑 晴翔</span>
-          <span className="py-2">山﨑 晴翔</span>
+          <span className="py-2">山﨑</span>
         </div>
         <div className="d-flex flex-column px-3">
           <span className="py-2">権田 楓太朗</span>
