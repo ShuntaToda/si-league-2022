@@ -13,11 +13,10 @@ export const Footer = () => {
           <span className="py-2">河内 涼馬</span>
         </div>
         <div className="d-flex flex-column px-3">
-          <span className="py-2">武田 </span>
-          <span className="py-2">権田 楓太朗</span>
-          <span className="py-2">権田 楓太朗</span>
-          <span className="py-2">権田 楓太朗</span>
-          <span className="py-2">権田 楓太朗</span>
+          <span className="py-2">武田 遼平</span>
+          <span className="py-2">谷口 航輝</span>
+          <span className="py-2">早川 愛佳</span>
+          <span className="py-2">森下 結衣</span>
         </div>
       </div>
     </div>
