@@ -16,8 +16,10 @@
 
   &__school {
     height: 60px;
+    width: 60px;
     @media (min-width: 500px) {
       height: 70px;
+      width: 70px;
     }
     > img {
       height: 100%;
