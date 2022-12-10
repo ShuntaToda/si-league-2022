@@ -7,14 +7,13 @@ export const Footer = () => {
       <div className="l-footer__group">浅井組</div>
       <div className="l-footer__member d-flex justify-content-center flex-colomn flex-md-row text-white mt-3">
         <div className="d-flex flex-column px-3">
-          <span className="py-2">山﨑 晴翔</span>
-          <span className="py-2">山﨑 晴翔</span>
-          <span className="py-2">山﨑 晴翔</span>
-          <span className="py-2">山﨑 晴翔</span>
-          <span className="py-2">山﨑</span>
+          <span className="py-2">安藤 嵩人</span>
+          <span className="py-2">飯田 遼介</span>
+          <span className="py-2">岩 大雅</span>
+          <span className="py-2">河内 涼馬</span>
         </div>
         <div className="d-flex flex-column px-3">
-          <span className="py-2">権田 楓太朗</span>
+          <span className="py-2">武田 </span>
           <span className="py-2">権田 楓太朗</span>
           <span className="py-2">権田 楓太朗</span>
           <span className="py-2">権田 楓太朗</span>
